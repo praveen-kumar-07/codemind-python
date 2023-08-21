@@ -1,7 +1,10 @@
 n=input()
-for i in n:
-    if(n.count(i)==2):
+ls=[i for i in n]
+c=0
+for i in ls:
+    if(ls.count(i)>1):
         print("Not Unique Number")
+        c=1
         break
-else:
+if c==0:
     print("Unique Number")
